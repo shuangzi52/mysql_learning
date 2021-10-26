@@ -22,7 +22,9 @@ func main()  {
 	 */
 
 	path := "/usr/local/mysql/data/csch/t3.ibd"
-	err := space.Stats(path)
+	// path := "/usr/local/mysql/data/csch/t4.ibd"
+	// err := space.Stats(path)
+	err := space.IndexHeader(path)
 	if err != nil {
 		fmt.Println(err)
 	}
